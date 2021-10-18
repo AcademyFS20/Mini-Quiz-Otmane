@@ -13,21 +13,25 @@ submit.addEventListener("click",function(e){
     let div=document.createElement('div');
     let group=document.getElementById("form-group1");
     let input=document.createElement("input");
-    let p=document.createElement("p");
+    let p=document.querySelector("p");
     input.setAttribute("type","text");
     div.style.border="3px solid yellow";
     div.style.backgroundColor="white";
-    div.style.width="80%";
+    div.style.paddingLeft="20px";
+    div.style.paddingTop="20px";
+    div.style.width="50%";
     div.style.height="50px";
-    if(name!="")
+    if((name!="")&&((/^[a-z A-Z]{6,20}$/).test(name)))
     {
+        p.innerText="";
         input.value=name;
         div.appendChild(input);
         group.appendChild(div);
+        submit.setAttribute("disabled","true");
     }
     else
     {
-        txt=document.createTextNode('le champ est vide');
+        txt=document.createTextNode('Vous ne respectez les régles');
         p.appendChild(txt);
         group.appendChild(p);    
     }
@@ -49,6 +53,6 @@ send.addEventListener("click",function(e)
     }
     window.scrollTo({top:0,behavior:'smooth'})
     span.innerText=`${score}`;
-    // Animation
+    // Animation de score
     animaterToScore(score);
 });
