@@ -9,8 +9,43 @@
 </head>
 <body>
     <header>
-        <h1>You have got<span></span>%</h1>
+        <h1>UI Quiz</h1>
+        <h2>You have got<span></span>%</h2>
     </header>
+    <section>
+        <h2>Questions</h2>
+        <form>
+            <div class="form-group" id="form-group1">
+                <h3>1.What is your name?</h3>
+                <input type="text" placeholder="answer" name="name" id="name">
+                <input type="submit" id="submit" value="submit">
+            </div>
+            <div class="form-group">
+                <h3>2.Javascript is typed language</h3>
+                <input type="radio" value="yes" id="yes" name="javascript"><label for="yes">YES</label><br>
+                <input type="radio" value="no" id="no" name="javascript"><label for="no">NO</label>
+            </div>
+            <div class="form-group">
+                <h3>3.DOM?</h3>
+                <input type="radio" value="mirror" id="mirror" name="DOM"><label for="mirror">Document object mirror</label><br>
+                <input type="radio" value="modal" id="modal" name="DOM"><label for="modal">Document object modal</label>
+            </div>
+            <div class="form-group">
+                <h3>4.What is x?</h3>
+                <input type="radio" value="string" id="string" name="x"><label for="string">A string</label><br>
+                <input type="radio" value="array" id="array" name="x"><label for="array">An array</label>
+            </div>
+            <div class="form-group">
+                <h3>5.An object instance is?</h3>
+                <input type="radio" value="constructor" id="constructor" name="instance"><label for="constructor">A constructor</label><br>
+                <input type="radio" value="occurence" id="occurence" name="instance"><label for="occurence">An occurence of the same object</label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="send">
+            </div>
+        </form>
+
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

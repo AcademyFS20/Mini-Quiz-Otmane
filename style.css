@@ -1,11 +1,12 @@
 html
 {
-    font-size:16px;
+    font-size:62.5%;
 }
 body
 {
     margin:0px;
     padding:0px;
+    box-sizing:border-box;
 }
 
         /*********** Header *********/
@@ -16,13 +17,67 @@ header
     display:flex;
     align-items:center;
     justify-content: center;
+    flex-direction:column;
 }
 header span
 {
-    font-size:2rem;
+    font-size:8rem;
+    color:rgb(56, 122, 197);
 }
 header h1
 {
-    margin-top:0px;
-    text-align:center;
+    color:rgb(56, 122, 197);
+    font-size:4rem;
+}
+header h2
+{
+    /* margin-top:0px; */
+    /* text-align:center; */
+    font-size:4rem;
+}
+
+        /*********** section **********/
+
+section
+{
+    background-color:rgb(56, 122, 197);
+    font-size:1.5rem;
+    padding:50px;
+}
+.form-control
+{
+    margin-bottom:20px;
+}
+section h2
+{
+    color:white;
+}
+input[type="submit"]
+{
+    border-radius:35px;
+    font-size:2rem;
+    color:white;
+    background-color:transparent;
+    border:1px solid black;
+    transition: all 0.2s ease-in;
+}
+input[type="submit"]:hover
+{
+    background-color:yellow;
+    color:black;
+}
+input[type="text"]
+{
+    /* padding:5px; */
+    height: 25px;
+}
+input[value="send"]
+{
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+.form-control label
+{
+    /* display:block; */
 }
